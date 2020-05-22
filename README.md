@@ -3,7 +3,7 @@ Repo for collaborating on an ETL Project
 
 Extract:
 
-Our report focused on creating a single dataset that presented both data from the NFL Combine and NFL All-Pro Teams. This data merge would help to examine whether draft position and biomechanics had any effect on a player’s selection to a given year’s All-Pro roster. Every year, top college prospects are invited to the NFL Combine where exact biomechanical measurements are taken. Those selected to each year’s All-Pro roster are considered to be the best players at their position in the National Football League. 
+Our report focused on creating a single dataset that presented data from both the NFL Combine and NFL All-Pro Teams. This data merge would help to examine whether draft position and biomechanics had any effect on a player’s selection to a given year’s All-Pro roster. Every year, top college prospects are invited to the NFL Combine where exact biomechanical measurements are taken. Those selected to each year’s All-Pro roster are considered to be the best players at their position in the National Football League. 
 
 Our original sources for this ETL project were Wikipedia and Kaggle. With the Python's splinter function, using Jupyter Notebook we were able to scrape every All-Pro Team page from 1987 to 2017 returning player names. From Kaggle we took an Excel spreadsheet that had the biomechanical measurements and draft position of players going back to the 1987 NFL Combine. 
 
@@ -14,3 +14,5 @@ At the NFL Combine, participants can opt out of certain events. The minimal requ
 In order to clean up the data a little more and reduce overall file size, when assembling our final dataset we dropped measurements and the draft position of players that were not All-Pro. 
 
 Load:
+
+We used postgres to create the final database because it is a relational database and that is what we are most familiar with.
