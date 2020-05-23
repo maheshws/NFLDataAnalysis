@@ -15,4 +15,4 @@ In order to clean up the data a little more and reduce overall file size, when a
 
 Load:
 
-We used postgres to create the final database because it is a relational database and that is what we are most familiar with.
+We used postgres to create the final database because it is a relational database and that is what we are most familiar with.SQLAlchemy was used to create the engine to establish the relational database with Pandas. 
