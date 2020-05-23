@@ -18,3 +18,5 @@ In order to clean up the data a little more and reduce overall file size, when a
 **Load:**
 
 We used postgres to create the final database because it is a relational database and that is what we are most familiar with. SQLAlchemy was used to create the engine to establish the relational database with Pandas. We ran into problems with the merged data frame where players with the same name appeared. We remedied this problem by looking at a player's draft year to distinguish them. 
+
+After the data-transformation step using DataFrames, the PostgreSQL schema was built using "QuickDBD-export_NFL_Tables.sql". This SQL file created 5 tables that were populated through the DataFrames built during the data-Transform process. The database diagram is depicted by the "db-diagram.png" file: 
